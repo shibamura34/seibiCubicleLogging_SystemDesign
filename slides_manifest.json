@@ -1,0 +1,140 @@
+﻿{
+  "title": "Seibi Cubicle Logging System",
+  "galleryTitle": "Inside Seibi Cubicle Logging System",
+  "gatewayModel": "Raspberry Pi Zero 2 W",
+  "gatewayAuditPages": 19,
+  "gatewayUpdatedSlides": [1, 2, 4, 12, 14, 16],
+  "date": "2026-10-13",
+  "format": "19 raster PNG slides + HTML gallery",
+  "individualUpdates": {
+    "date": "2026-10-13",
+    "slide1": "TIGER orange dashed boundary changed to a rectangle; GW2 replaced with official Pi Zero 2 W photo",
+    "slide2": "Official Raspberry Pi Zero 2 W photo inserted; GW1 note removed",
+    "gatewayPhotoSource": "https://www.raspberrypi.com/news/new-raspberry-pi-zero-2-w-2/"
+  },
+  "size": {
+    "width": 1672,
+    "height": 941
+  },
+  "tigerComponents": [
+    "Mosquitto (MQTT broker)",
+    "Telegraf",
+    "InfluxDB",
+    "Grafana"
+  ],
+  "tigerUpdatedSlides": [
+    1,
+    2,
+    5,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+  ],
+  "loggerCTChannels": [
+    "R",
+    "S",
+    "T"
+  ],
+  "slide3CTCableExit": "right-side connectors",
+  "slides": [
+    {
+      "n": 1,
+      "title": "システム構成図",
+      "filename": "01_system_architecture.png"
+    },
+    {
+      "n": 2,
+      "title": "ロガー／ゲートウェイ諸元",
+      "filename": "02_specifications.png"
+    },
+    {
+      "n": 3,
+      "title": "計測周期と16Bレコード構造",
+      "filename": "03_cycle_and_payload.png"
+    },
+    {
+      "n": 4,
+      "title": "保存確認を伴うBLE回収",
+      "filename": "04_commit_protocol.png"
+    },
+    {
+      "n": 5,
+      "title": "停止条件に基づく保存設計",
+      "filename": "05_design_origins.png"
+    },
+    {
+      "n": 6,
+      "title": "256Bページで記録と管理を集約",
+      "filename": "06_flash_page_management.png"
+    },
+    {
+      "n": 7,
+      "title": "循環undo journalの更新手順",
+      "filename": "07_undo_journal.png"
+    },
+    {
+      "n": 8,
+      "title": "起動時の復旧判定",
+      "filename": "08_recovery_decision.png"
+    },
+    {
+      "n": 9,
+      "title": "Flash更新予算と保守条件",
+      "filename": "09_wear_and_maintenance.png"
+    },
+    {
+      "n": 10,
+      "title": "最新優先回収と未送信の自己照合",
+      "filename": "10_freshness_self_repair.png"
+    },
+    {
+      "n": 11,
+      "title": "品質検証・永続キュー・再送処理",
+      "filename": "11_quality_and_delivery.png"
+    },
+    {
+      "n": 12,
+      "title": "複数ロガーの通信時刻を管理",
+      "filename": "12_multi_logger_schedule.png"
+    },
+    {
+      "n": 13,
+      "title": "停止位置と入力条件を変えたPC検証",
+      "filename": "13_host_tests.png"
+    },
+    {
+      "n": 14,
+      "title": "4 Logger・160 recordのE2E照合",
+      "filename": "14_hardware_validation.png"
+    },
+    {
+      "n": 15,
+      "title": "小型MCUの実行時間とメモリ余裕",
+      "filename": "15_performance_resources.png"
+    },
+    {
+      "n": 16,
+      "title": "設計上の利点と適用限界",
+      "filename": "16_engineering_value.png"
+    },
+    {
+      "n": 17,
+      "title": "16Bを保ったMQTTまとめ送信",
+      "filename": "17_mqtt_batch.png"
+    },
+    {
+      "n": 18,
+      "title": "1NCEの10年500MBと収容台数",
+      "filename": "18_one_nce_budget.png"
+    },
+    {
+      "n": 19,
+      "title": "500MBへ収める通信条件",
+      "filename": "19_one_nce_conditions.png"
+    }
+  ]
+}
+
